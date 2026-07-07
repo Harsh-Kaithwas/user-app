@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LwinR</string>
+    <!-- Firebase Google SignIn -->
+    <string name="default_web_client_id">
+        250088501618-xxxxxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com
+    </string>
+</resources>

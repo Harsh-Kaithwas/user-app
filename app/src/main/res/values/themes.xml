@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.LwinR" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">#090D14</item>
+        <item name="android:statusBarColor">#090D14</item>
+        <item name="android:navigationBarColor">#090D14</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.LwinR" parent="Base.Theme.LwinR" />
+</resources>

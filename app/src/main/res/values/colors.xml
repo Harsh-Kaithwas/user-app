@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App dark theme -->
+    <color name="app_bg">#090D14</color>
+    <color name="app_bg_2">#101722</color>
+    <color name="app_surface">#151C28</color>
+    <color name="app_surface_2">#1A2230</color>
+    <color name="app_stroke">#3E4A5F</color>
+    <color name="app_stroke_soft">#263244</color>
+
+    <!-- Text -->
+    <color name="text_primary">#EAF2FF</color>
+    <color name="text_secondary">#B9C4D6</color>
+    <color name="text_muted">#8A95A8</color>
+
+    <!-- Accent -->
+    <color name="accent_blue">#7CC7FF</color>
+    <color name="accent_blue_soft">#4DA3FF</color>
+    <color name="accent_gold">#D8C08A</color>
+    <color name="accent_purple">#7F3FBF</color>
+    <color name="accent_purple_dark">#4A1E75</color>
+
+    <!-- Card glows / overlays -->
+    <color name="card_overlay_top">#1AFFFFFF</color>
+    <color name="card_overlay_bottom">#00FFFFFF</color>
+    <color name="card_shadow">#CC000000</color>
+    <color name="card_blue_glow">#2D5B8F</color>
+
+    <!-- Optional old compatibility -->
+    <color name="blue_primary">#4DA3FF</color>
+    <color name="dark_navy">#090D14</color>
+</resources>

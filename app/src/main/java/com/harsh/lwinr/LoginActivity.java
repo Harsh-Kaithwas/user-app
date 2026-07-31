@@ -28,6 +28,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class LoginActivity extends AppCompatActivity {
 
     private static final int RC_GOOGLE_SIGN_IN = 9001;
@@ -54,7 +55,7 @@ public class LoginActivity extends AppCompatActivity {
         setupUI();
         checkExistingSession();
     }
-
+    
     private void setupGoogleSignIn() {
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
@@ -138,6 +139,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, "Google Sign-In failed: " + e.getStatusCode(), Toast.LENGTH_SHORT).show();
         }
     }
+    
 
     private void firebaseAuthWithGoogle(String idToken) {
         AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
@@ -167,6 +169,7 @@ public class LoginActivity extends AppCompatActivity {
 
         userRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
+           
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if (!snapshot.exists()) {
                     Map<String, Object> userData = new HashMap<>();
@@ -207,6 +210,7 @@ public class LoginActivity extends AppCompatActivity {
                     ensureUserDefaultsAndProceed(userRef);
                 }
             }
+            
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
@@ -232,6 +236,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (!snapshot.child("referredBy").exists()) patch.put("referredBy", "");
                 if (!snapshot.child("referredByUserId").exists()) patch.put("referredByUserId", "");
 
+                
                 if (!snapshot.child("referralCode").exists()) {
                     String uid = snapshot.getKey() != null ? snapshot.getKey() : "";
                     String codePart = uid.length() >= 6 ? uid.substring(0, 6) : uid;
@@ -244,6 +249,7 @@ public class LoginActivity extends AppCompatActivity {
                     patch.put("wallet/total", getLong(snapshot.child("mainWallet"), 250L));
                     patch.put("wallet/withdrawable", getLong(snapshot.child("mainWallet"), 250L));
                     patch.put("wallet/updatedAt", System.currentTimeMillis());
+               
                 } else {
                     if (!snapshot.child("wallet/bonus").exists()) patch.put("wallet/bonus", 0L);
                     if (!snapshot.child("wallet/referralBonus").exists()) patch.put("wallet/referralBonus", 0L);
@@ -268,6 +274,7 @@ public class LoginActivity extends AppCompatActivity {
                 openProfileSetup();
             }
         });
+        
     }
 
     private void checkProfileAndProceed(String userId) {
@@ -286,6 +293,7 @@ public class LoginActivity extends AppCompatActivity {
                         && displayName != null
                         && !displayName.trim().isEmpty();
 
+                
                 if (isProfileReady) {
                     goToMainScreen();
                 } else {
@@ -301,6 +309,7 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
+    
     private long getLong(DataSnapshot snapshot, long fallback) {
         Long value = snapshot.getValue(Long.class);
         return value != null ? value : fallback;

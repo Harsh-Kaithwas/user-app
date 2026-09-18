@@ -17,3 +17,9 @@ render.experimental.xml
 *.keystore
 google-services.json
 *.hprof
+
+.env
+key.properties
+secrets.properties
+firebase-adminsdk-*.json
+service-account*.json

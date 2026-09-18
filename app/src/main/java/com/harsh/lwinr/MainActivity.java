@@ -43,7 +43,12 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "LwinR_DEBUG";
     private static final String AUTH_TAG = "LwinR_AUTH";
-    private static final String DB_URL = "https://lwinr-6f076-default-rtdb.asia-southeast1.firebasedatabase.app";
+
+    // Demo Firebase Realtime Database URL.
+    // Replace this with your own Firebase Database URL before running the project.
+    private static final String DB_URL =
+        "https://YOUR-PROJECT-ID-default-rtdb.firebaseio.com";
+    
     private static final String AD_UNIT_ID = "ca-app-pub-3940256099942544/5224354917";
     private static final int AD_REWARD_POINTS = 10;
     private static final long REFERRAL_RELEASE_POINTS = 5L;

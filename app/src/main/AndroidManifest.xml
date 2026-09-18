@@ -28,6 +28,8 @@
         <activity
             android:name=".WalletActivity"
             android:exported="false" />
+
+        <!-- App launcher: checks session and routes user to Login or Main screen -->
         <activity
             android:name=".SplashRouterActivity"
             android:exported="true">
@@ -38,12 +40,20 @@
             </intent-filter>
         </activity>
 
+        <!--
+         Demo AdMob App ID.
+        Replace it with your own AdMob App ID in a private/local project.
+        Do not commit production AdMob configuration to a public repository.
+        -->
+
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-5404723564656290~7873204209" /> <!-- ✅ LAUNCHER: Only LoginActivity (main entry point) -->
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        
         <activity
             android:name=".LoginActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />

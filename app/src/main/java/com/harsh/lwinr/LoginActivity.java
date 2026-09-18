@@ -36,9 +36,12 @@ public class LoginActivity extends AppCompatActivity {
 
     private static final int RC_GOOGLE_SIGN_IN = 9001;
     private static final String TAG = "LwinR_DEBUG";
-    private static final String DB_URL =
-            "https://lwinr-6f076-default-rtdb.asia-southeast1.firebasedatabase.app";
 
+    // Demo Firebase Realtime Database URL.
+    // Replace this with your own Firebase Database URL before running the project.
+    private static final String DB_URL =
+        "https://YOUR-PROJECT-ID-default-rtdb.firebaseio.com";
+    
     private FirebaseAuth mAuth;
     private DatabaseReference rootRef;
 

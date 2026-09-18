@@ -41,7 +41,12 @@ import java.util.Locale;
 public class LuckyDrawActivity extends AppCompatActivity {
 
     private static final String TAG = "LuckyDraw";
-    private static final String DB_URL = "https://lwinr-6f076-default-rtdb.asia-southeast1.firebasedatabase.app";
+    
+    // Demo Firebase Realtime Database URL.
+    // Replace this with your own Firebase Database URL before running the project.
+    private static final String DB_URL =
+        "https://YOUR-PROJECT-ID-default-rtdb.firebaseio.com";
+    
     private static final int MAX_TOKENS_PER_USER = 20;
     private static final int MAX_TOTAL_TOKENS = 2500;
     private static final int MIN_TOKENS_REQUIRED = 1000;

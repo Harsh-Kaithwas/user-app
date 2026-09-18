@@ -32,8 +32,11 @@ import java.util.TimeZone;
 public class CheckInActivity extends AppCompatActivity {
 
     private static final String TAG = "LwinR_AUTH";
-    private static final String DB_URL = "https://lwinr-6f076-default-rtdb.asia-southeast1.firebasedatabase.app";
-
+    // Demo Firebase Realtime Database URL.
+    // Replace this with your own Firebase Database URL in your local project.
+    private static final String DB_URL =
+        "https://YOUR-PROJECT-ID-default-rtdb.firebaseio.com";
+    
     private final int[] rewardCycle = {10, 20, 30, 40, 50, 60, 100};
 
     private TextView tvUserName, tvWalletPoints, tvTitle, tvSubtitle, tvStreak, tvCountdownLabel, tvCountdown, tvHelper;

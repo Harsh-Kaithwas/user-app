@@ -28,8 +28,11 @@ import java.util.List;
 public class LeaderboardActivity extends AppCompatActivity {
 
     private static final String TAG = "LeaderboardActivity";
-    private static final String DB_URL = "https://lwinr-6f076-default-rtdb.asia-southeast1.firebasedatabase.app";
-
+    // Demo Firebase Realtime Database URL.
+    // Replace this with your own Firebase Database URL in your local project.
+    private static final String DB_URL =
+        "https://YOUR-PROJECT-ID-default-rtdb.firebaseio.com";
+    
     private FirebaseAuth mAuth;
     private TextView tvSummary;
     private ProgressBar progressBar;

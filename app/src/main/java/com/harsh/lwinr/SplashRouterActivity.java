@@ -20,9 +20,10 @@ import com.google.firebase.database.ValueEventListener;
 public class SplashRouterActivity extends AppCompatActivity {
 
     private static final String TAG = "LwinR_AUTH";
-    private static final String DB_URL =
-            "https://lwinr-6f076-default-rtdb.asia-southeast1.firebasedatabase.app";
-
+    // Demo Firebase Realtime Database URL.
+// Replace this with your own Firebase Database URL before running the project.
+private static final String DB_URL =
+        "https://YOUR-PROJECT-ID-default-rtdb.firebaseio.com";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

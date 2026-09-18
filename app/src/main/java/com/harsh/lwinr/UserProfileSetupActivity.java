@@ -26,8 +26,10 @@ import java.util.Map;
 public class UserProfileSetupActivity extends AppCompatActivity {
 
     private static final String TAG = "LwinR_DEBUG";
-    private static final String DB_URL =
-            "https://lwinr-6f076-default-rtdb.asia-southeast1.firebasedatabase.app";
+    // Demo Firebase Realtime Database URL.
+// Replace this with your own Firebase Database URL before running the project.
+private static final String DB_URL =
+        "https://YOUR-PROJECT-ID-default-rtdb.firebaseio.com";
     private static final long REFERRAL_REWARD = 100L;
 
     private EditText etUserName, etReferralCode;

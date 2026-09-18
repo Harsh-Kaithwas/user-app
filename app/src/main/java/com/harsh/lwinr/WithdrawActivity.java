@@ -37,8 +37,10 @@ public class WithdrawActivity extends AppCompatActivity {
 
     private static final int MIN_WITHDRAW = 1000;
     private static final long COOLDOWN_MILLIS = 24L * 60L * 60L * 1000L;
-    private static final String DB_URL = "https://lwinr-6f076-default-rtdb.asia-southeast1.firebasedatabase.app";
-
+    // Demo Firebase Realtime Database URL.
+// Replace this with your own Firebase Database URL before running the project.
+private static final String DB_URL =
+        "https://YOUR-PROJECT-ID-default-rtdb.firebaseio.com";
     private FirebaseDatabase database;
     private FirebaseAuth mAuth;
     private DatabaseReference usersRef, withdrawRef;
